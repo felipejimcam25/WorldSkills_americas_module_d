@@ -119,7 +119,7 @@ This project allows an administrator to:
 ## ▶️ How to Run Locally
 1. Clone the repository:
    ```bash
-   [git clone https://github.com/your-username/your-repo-name.git](https://github.com/felipejimcam25/WorldSkills_americas_module_d.git)
+   [git clone https://github.com/felipejimcam25/WorldSkills_americas_module_d.git]
 2. Install dependencies (if applicable)
 3. Configure the database (MySQL)
 4. Start the server with npm start
