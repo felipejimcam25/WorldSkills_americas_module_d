@@ -7,75 +7,76 @@ It focuses on building a simplified product management system with a public API,
 
 The solution was designed to be completed within a limited time frame (approximately 3 hours), while maintaining basic standards of code quality, server-side validation, and accessibility.
 
-📌 Project Overview
+###📌 Project Overview
 
 In Latin America, the trade of local food products plays an important economic and cultural role. Products such as Brazilian coffee, Argentine yerba mate, Ecuadorian cocoa, and Dominican vanilla are part of the region’s identity.
 
 This project allows an administrator to:
 
-Register companies and their products
+-Register companies and their products
 
-Expose visible products through a public JSON API
+-Expose visible products through a public JSON API
 
-Display product information on a public web page
+-Display product information on a public web page
 
-Manage data through a secure admin dashboard
+-Manage data through a secure admin dashboard
 
-🚀 Features
-🔐 Administration Panel
+###🚀 Features
+#🔐 Administration Panel
 
 Access protected by a passphrase-based login
 
 Dashboard to:
 
-Create, update, and delete companies
+-Create, update, and delete companies
 
-Create, update, and delete products
+-Create, update, and delete products
 
-Products can only be deleted if they are marked as hidden
+-Products can only be deleted if they are marked as hidden
 
-Companies can be set as active or inactive
+-Companies can be set as active or inactive
 
-🌐 Public API
+###🌐 Public API
 
 Returns only visible products belonging to active companies
 
 Supports:
 
-Keyword search
+-Keyword search
 
-Pagination
+-Pagination
 
-Provides detailed product information by GTIN
+-Provides detailed product information by GTIN
 
-📄 Public Product Page
+###📄 Public Product Page
 
 Public HTML page that displays:
 
-Product name
+-Product name
 
-GTIN
+-GTIN
 
-Description
+-Description
 
-Brand
+-Brand
 
-Company
+-Company
 
-Country of origin
+-Country of origin
 
-Gross and net weight
+-Gross and net weight
 
-Includes pagination in the public product listing
+-Includes pagination in the public product listing
 
-Simple, mobile-friendly, and accessible design
+-Simple, and accessible design
 
-🔗 API Endpoints
-Public API
+###🔗 API Endpoints
+#Public API
 Method	Endpoint	Description
 GET	/api/products.json?query=&page=1&limit=10	List of visible products
 GET	/api/products/:gtin	Public product detail
-Admin API (Login Required)
+
+#Admin API (Login Required)
 Method	Endpoint	Description
 POST	/admin/login	Admin login
 GET	/api/admin/companies	List companies
@@ -85,95 +86,97 @@ GET	/api/admin/product	List products
 POST	/api/admin/products	Create product
 PUT	/api/admin/products/:gtin	Update product
 DELETE	/api/admin/products/:gtin	Delete product (only if hidden)
-📋 Data Model & Validations
-Companies
 
-Name
+###📋 Data Model & Validations
+-Companies
 
-Address
+-Name
 
-Phone
+-Address
 
-Email
+-Phone
 
-Status (active / inactive)
+-Email
 
-Products
+-Status (active / inactive)
 
-GTIN (13–14 digits, unique, server-side validated)
+-Products
 
-Name
+-GTIN (13–14 digits, unique, server-side validated)
 
-Description
+-Name
 
-Brand
+-Description
 
-Country of origin
+-Brand
 
-Gross weight
+-Country of origin
 
-Net weight
+-Gross weight
 
-Unit
+-Net weight
 
-Hidden status (visible / hidden)
+-Unit
 
-Business Rules
+-Hidden status (visible / hidden)
 
-Products from inactive companies are not shown in the public API
+##Business Rules
 
-Hidden products are never displayed publicly
+-Products from inactive companies are not shown in the public API
 
-Product detail endpoint returns 404 if:
+-Hidden products are never displayed publicly
 
-GTIN does not exist
+-Product detail endpoint returns 404 if:
 
-Product is hidden
+-GTIN does not exist
 
-Company is inactive
+-Product is hidden
 
-🧑‍💻 Technologies
+-Company is inactive
 
-Backend: Node.js / PHP / Python (depending on implementation)
+###🧑‍💻 Technologies
 
-Database: SQLite or MySQL
+-Backend: Node.js/Express
 
-Frontend: HTML, CSS, JavaScript
+-Database: MySQL
 
-API Format: JSON
+-Frontend: HTML, CSS, JavaScript
 
-⚠️ This project is not deployed yet and runs locally.
+-API Format: JSON
 
-▶️ How to Run Locally
+#⚠️ This project is not deployed yet and runs locally.
+
+###▶️ How to Run Locally
 
 Clone the repository:
 
-git clone https://github.com/your-username/your-repo-name.git
+-git clone https://github.com/felipejimcam25/WorldSkills_americas_module_d.git
 
 
-Install dependencies (if applicable)
+-Install dependencies (if applicable)
 
-Configure the database (SQLite or MySQL)
+-Configure the database (MySQL)---Always with module_d name
 
-Start the server
+-Start the server
 
-Access:
+###Access:
 
-Admin panel: /admin/login
+Admin panel: http://localhost:3000/admin/login
+Credentials: Username: admin, pass: 12345678 
 
-Public products page: /public/producto/:gtin
+Public products page: http://localhost:3000/public/producto/:gtin
 
-🏁 Competition Context
+### 🏁 Competition Context
 
 Event: WorldSkills Americas 2025
 
 Location: Santiago, Chile
 
-Category: Web / Software Development
+Category: Web Technologies
 
 Time Constraint: ~3 hours
 
-Focus: Backend logic, API design, validation, and basic frontend integration
+Focus: Backend logic, API design, validation, and frontend integration
 
 📌 Notes
 
