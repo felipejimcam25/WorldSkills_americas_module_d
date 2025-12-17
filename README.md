@@ -132,6 +132,6 @@ This project allows an administrator to:
 ## 🏁 Competition Context
 - Event: WorldSkills Americas 2025
 - Location: Santiago, Chile
-- Category: Web / Software Development
+- Category: Web Technologies
 - Time Constraint: ~3 hours
 - Focus: Backend logic, API design, validation, and frontend integration
