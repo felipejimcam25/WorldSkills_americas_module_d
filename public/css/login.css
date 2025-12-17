@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.containerLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contentLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #FFF;
+    padding: 2rem 3rem;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formControl{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formControl input{
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    border: 2px solid #000;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    background-color: grey;
+    color: #FFF;
+}

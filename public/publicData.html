@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public API</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <section class="container publicContainer">
+        <article class="content publicContent">
+            <div class="head">
+                <h1>Public Products</h1>
+                <form action="#" class="searchControl">
+                    <label for="searchGtin">Search GTIN: <input type="text" id="searchGtin"></label>
+                    <label for="searchGtin">Search Name: <input type="text" id="searchName"></label>
+                </form>
+            </div>
+            <table border="1">
+                <thead>
+                    <th>Nombre</th>
+                    <th>GTIN</th>
+                    <th>Descripcion</th>
+                    <th>Compañia</th>
+                    <th>Origen</th>
+                    <th>Peso Bruto</th>
+                    <th>Peso Neto</th>
+                    <th>Acciones</th>
+                </thead>
+
+                <tbody id="productPublic">
+                </tbody>
+            </table>
+            <div class="paginationControl">
+                <button class="prevBtn" id="prevBtn">Previous</button>
+                <button class="nextBtn" id="nextBtn">Next</button>
+            </div>
+        </article>
+
+        <article class="modal" id="modalPublic">
+
+        </article>
+    </section>
+
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
