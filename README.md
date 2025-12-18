@@ -120,7 +120,7 @@ This project allows an administrator to:
 1. Clone the repository:
    ```bash
    [git clone https://github.com/felipejimcam25/WorldSkills_americas_module_d.git]
-2. Install dependencies (if applicable)
+2. Install dependencies (Necessary)
 3. Configure the database (MySQL)
 4. Start the server with npm start
 5. Access:
