@@ -121,9 +121,10 @@ This project allows an administrator to:
    ```bash
    [git clone https://github.com/felipejimcam25/WorldSkills_americas_module_d.git]
 2. Install dependencies (Necessary)
-3. Configure the database (MySQL)
-4. Start the server with npm start
-5. Access:
+3. Create a MySQL database named `module_d` (Important)
+4. Import the SQL file located in the `database/` folder into the `module_d` database.
+5. Start the server with npm start
+6. Access:
     - Admin panel: http://localhost:3000/admin/login
         - Username: admin
         - Password: 12345678
